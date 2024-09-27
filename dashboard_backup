@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'php/search_details.php';
+include 'master/session.php';
+?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Shakthi Institute of Engineering and Technology</title>
+</head>
+<?php include 'master/dependancies.php'; ?>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+		<?php include 'master/sidebar.php'; ?>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-5 col-sm-12 mx-auto p-3 bg-light border rounded shadow overflow-auto tab-content" id="main-content">
+		    		<div id="student_attendance" class="tab-pane active">
+					<?php include 'student_attendance.php'; ?>
+				</div>
+			<div id="upload_student" class="tab-pane">
+				<?php include 'create_student.php'; ?>
+			</div>
+		    </div>
+                </div>
+		</div>
+<?php include 'master/footer.php'; ?>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
